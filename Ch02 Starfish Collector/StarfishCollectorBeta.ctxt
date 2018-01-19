@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ initialize()
+comment1.params=dt
+comment1.target=void\ update(float)
+numComments=2

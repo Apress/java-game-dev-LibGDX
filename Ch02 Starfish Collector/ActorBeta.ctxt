@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ActorBeta()
+comment1.params=t
+comment1.target=void\ setTexture(com.badlogic.gdx.graphics.Texture)
+comment2.params=
+comment2.target=com.badlogic.gdx.math.Rectangle\ getRectangle()
+comment3.params=other
+comment3.target=boolean\ overlaps(ActorBeta)
+comment4.params=dt
+comment4.target=void\ act(float)
+comment5.params=batch\ parentAlpha
+comment5.target=void\ draw(com.badlogic.gdx.graphics.g2d.Batch,\ float)
+numComments=6

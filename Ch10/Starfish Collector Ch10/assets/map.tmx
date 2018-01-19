@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="32" tileheight="32" nextobjectid="41">
+ <tileset firstgid="1" name="ocean-plants" tilewidth="64" tileheight="64" tilecount="4" columns="2">
+  <image source="ocean-plants.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="5" name="rock" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="rock.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="Rock"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="sign" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="sign.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="message" value="Hello, world!"/>
+    <property name="name" value="Sign"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="starfish" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="starfish.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="Starfish"/>
+   </properties>
+  </tile>
+ </tileset>
+ <imagelayer name="Image Layer 1">
+  <image source="large-water.jpg" width="1024" height="1024"/>
+ </imagelayer>
+ <layer name="Tile Layer 1" width="32" height="32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,
+0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" gid="5" x="128" y="736" width="64" height="64"/>
+  <object id="2" gid="5" x="192" y="768" width="64" height="64"/>
+  <object id="3" gid="5" x="416" y="800" width="64" height="64"/>
+  <object id="4" gid="5" x="480" y="800" width="64" height="64"/>
+  <object id="6" gid="5" x="512" y="288" width="64" height="64"/>
+  <object id="8" gid="5" x="448" y="288" width="64" height="64"/>
+  <object id="9" gid="5" x="384" y="320" width="64" height="64"/>
+  <object id="10" gid="5" x="320" y="352" width="64" height="64"/>
+  <object id="11" gid="5" x="288" y="416" width="64" height="64"/>
+  <object id="15" gid="5" x="288" y="480" width="64" height="64"/>
+  <object id="16" gid="5" x="288" y="544" width="64" height="64"/>
+  <object id="17" gid="5" x="704" y="768" width="64" height="64"/>
+  <object id="18" gid="5" x="736" y="704" width="64" height="64"/>
+  <object id="19" gid="5" x="768" y="640" width="64" height="64"/>
+  <object id="20" gid="5" x="832" y="640" width="64" height="64"/>
+  <object id="21" gid="5" x="0" y="736" width="64" height="64"/>
+  <object id="23" gid="5" x="768" y="320" width="64" height="64"/>
+  <object id="24" gid="5" x="160" y="192" width="64" height="64"/>
+  <object id="25" gid="7" x="320" y="928" width="64" height="64"/>
+  <object id="26" gid="7" x="608" y="896" width="64" height="64"/>
+  <object id="27" gid="7" x="864" y="800" width="64" height="64"/>
+  <object id="28" gid="7" x="480" y="448" width="64" height="64"/>
+  <object id="29" gid="7" x="96" y="416" width="64" height="64"/>
+  <object id="30" gid="7" x="352" y="160" width="64" height="64"/>
+  <object id="31" gid="7" x="704" y="160" width="64" height="64"/>
+  <object id="32" gid="7" x="800" y="512" width="64" height="64"/>
+  <object id="33" gid="7" x="896" y="256" width="64" height="64"/>
+  <object id="34" gid="6" x="64" y="736" width="64" height="64">
+   <properties>
+    <property name="message" value="Collect all the Starfish!"/>
+   </properties>
+  </object>
+  <object id="35" gid="6" x="864" y="96" width="64" height="64">
+   <properties>
+    <property name="message" value="The End of the World"/>
+   </properties>
+  </object>
+  <object id="38" x="128" y="864" width="32" height="32">
+   <properties>
+    <property name="name" value="start"/>
+   </properties>
+  </object>
+  <object id="39" x="-288" y="576"/>
+ </objectgroup>
+</map>

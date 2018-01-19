@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="32" tileheight="32" nextobjectid="69">
+ <tileset firstgid="1" name="platform-tileset" tilewidth="32" tileheight="32" tilecount="18" columns="6">
+  <image source="platform-tileset.png" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="19" name="object-tileset" tilewidth="32" tileheight="32" tilecount="7" columns="7">
+  <image source="object-tileset.png" width="224" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="Coin"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="name" value="Flag"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="name" value="Timer"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="name" value="Springboard"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="name" value="Platform"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="name" value="Key"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="name" value="Lock"/>
+   </properties>
+  </tile>
+ </tileset>
+ <imagelayer name="Image Layer 1">
+  <image source="background.png" width="1600" height="640"/>
+ </imagelayer>
+ <layer name="Tile Layer 1" width="50" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,14,0,0,0,0,0,0,7,7,7,7,7,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+</data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" x="0" y="608" width="1600" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="2" x="256" y="480" width="64" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="3" x="416" y="576" width="160" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="4" x="448" y="544" width="96" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="5" x="480" y="512" width="32" height="32">
+   <properties>
+    <property name="name" value="Solid"/>
+   </properties>
+  </object>
+  <object id="8" x="160" y="544" width="32" height="32">
+   <properties>
+    <property name="name" value="start"/>
+   </properties>
+  </object>
+  <object id="14" gid="19" x="512" y="480" width="32" height="32"/>
+  <object id="15" gid="19" x="256" y="448" width="32" height="32"/>
+  <object id="16" gid="19" x="480" y="480" width="32" height="32"/>
+  <object id="27" gid="21" x="480" y="416" width="32" height="32"/>
+  <object id="30" gid="19" x="448" y="480" width="32" height="32"/>
+  <object id="31" gid="19" x="288" y="448" width="32" height="32"/>
+  <object id="34" gid="22" x="64" y="608" width="32" height="32"/>
+  <object id="35" gid="25" x="640" y="608" width="32" height="32"/>
+  <object id="37" gid="25" x="640" y="576" width="32" height="32"/>
+  <object id="38" gid="25" x="640" y="544" width="32" height="32"/>
+  <object id="39" gid="25" x="672" y="512" width="32" height="32"/>
+  <object id="40" gid="25" x="736" y="512" width="32" height="32"/>
+  <object id="41" gid="25" x="704" y="512" width="32" height="32"/>
+  <object id="42" gid="23" x="224" y="384" width="32" height="32"/>
+  <object id="43" gid="23" x="192" y="384" width="32" height="32"/>
+  <object id="46" gid="23" x="256" y="384" width="32" height="32"/>
+  <object id="47" gid="23" x="288" y="384" width="32" height="32"/>
+  <object id="49" gid="24" x="192" y="320" width="32" height="32"/>
+  <object id="56" gid="20" x="704" y="608" width="32" height="32"/>
+  <object id="58" gid="25" x="768" y="512" width="32" height="32"/>
+  <object id="59" gid="25" x="800" y="576" width="32" height="32"/>
+  <object id="60" gid="25" x="800" y="544" width="32" height="32"/>
+  <object id="61" gid="25" x="800" y="608" width="32" height="32"/>
+  <object id="62" gid="23" x="320" y="384" width="32" height="32"/>
+  <object id="63" gid="23" x="352" y="384" width="32" height="32"/>
+  <object id="64" gid="19" x="352" y="320" width="32" height="32"/>
+  <object id="65" gid="19" x="288" y="576" width="32" height="32"/>
+  <object id="66" gid="19" x="256" y="576" width="32" height="32"/>
+  <object id="67" gid="19" x="256" y="288" width="32" height="32"/>
+  <object id="68" gid="19" x="288" y="288" width="32" height="32"/>
+ </objectgroup>
+</map>

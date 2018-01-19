@@ -1,0 +1,14 @@
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+
+public class HelloLauncher
+{
+    public static void main (String[] args)
+    {
+        // to start program:
+        // (1) create an instance of the game
+        // (2) create a new application that sends game instance and configuation settings
+        HelloWorldImage myProgram = new HelloWorldImage();
+        
+        new LwjglApplication( myProgram ); //, configSettings );
+    }
+}

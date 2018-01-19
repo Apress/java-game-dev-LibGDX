@@ -1,0 +1,44 @@
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
+
+public class LevelScreen extends BaseScreen
+{
+    private Turtle turtle;
+    private ActorBeta starfish;
+    private ActorBeta ocean;
+    private ActorBeta winMessage;
+    
+    private boolean win;
+    
+    public void create() 
+    {              
+        ocean = new ActorBeta();
+        ocean.setTexture( new Texture( Gdx.files.internal("assets/water.jpg") )  );
+        mainStage.addActor(ocean);
+        
+        starfish = new ActorBeta();
+        starfish.setTexture( new Texture(Gdx.files.internal("assets/starfish.png")) );
+        starfish.setPosition( 300,380 );
+        mainStage.addActor( starfish );
+        
+        turtle = new Turtle();
+        turtle.setTexture( new Texture(Gdx.files.internal("assets/turtle-1.png")) );
+        turtle.setPosition( 20,20 );
+        mainStage.addActor( turtle );
+        
+        winMessage = new ActorBeta();
+        winMessage.setTexture( new Texture(Gdx.files.internal("assets/you-win.png")) );
+        winMessage.setPosition( 100,100 );
+        winMessage.setVisible( false );
+        mainStage.addActor( winMessage );
+        
+        win = false;
+    }
+
+    public void update(float dt) 
+    {        
+        // check win condition: turtle must be overlapping starfish
+        if (turtle.overlaps(starfish))
+            winMessage.setVisible(true);
+    }
+}
